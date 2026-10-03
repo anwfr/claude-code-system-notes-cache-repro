@@ -46,5 +46,5 @@
   "X-Vercel-Id": "cdg1::fra1::bn6cb-1791026218716-39649e7c7cb8",
   "Transfer-Encoding": "chunked"
  },
- "response_raw": "{\"id\":\"msg_011CffD8JkTjXh7Pp11s7Z2A\",\"type\":\"message\",\"role\":\"assistant\",\"model\":\"claude-sonnet-5\",\"content\":[{\"type\":\"text\",\"text\":\"<severity>8\"}],\"stop_reason\":\"end_turn\",\"stop_sequence\":null,\"usage\":{\"input_tokens\":90,\"output_tokens\":9,\"cache_creation_input_tokens\":47734},\"cheaper_inference\":{\"request_id\":\"5effbe8c-0312-4d30-b883-9636dc64b562\",\"billing\":{\"status\":\"settled\",\"billed_cost_usd\":\"0.077743\",\"currency\":\"USD\",\"zero_data_retention\":false,\"effective_discount_percent\":35.00020902136198}}}"
+ "response_raw": "{\"id\": \"msg_011CffD8JkTjXh7Pp11s7Z2A\", \"type\": \"message\", \"role\": \"assistant\", \"model\": \"claude-sonnet-5\", \"content\": [{\"type\": \"text\", \"text\": \"<Claude Code text: 11 chars, sha256 cdaa4ba173d3>\"}], \"stop_reason\": \"end_turn\", \"stop_sequence\": null, \"usage\": {\"input_tokens\": 90, \"output_tokens\": 9, \"cache_creation_input_tokens\": 47734}, \"cheaper_inference\": {\"request_id\": \"5effbe8c-0312-4d30-b883-9636dc64b562\", \"billing\": {\"status\": \"settled\", \"billed_cost_usd\": \"0.077743\", \"currency\": \"USD\", \"zero_data_retention\": false, \"effective_discount_percent\": 35.00020902136198}}}"
 }

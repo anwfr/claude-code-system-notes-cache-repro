@@ -22,7 +22,8 @@ import http.client, json, os, pathlib, re, subprocess, sys, tempfile, threading,
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 MODEL = "claude-sonnet-5"
-UPSTREAMS = {"anthropic": "api.anthropic.com", "cheaperinference": "api.cheaperinference.com"}
+MODELS = {"anthropic": MODEL, "cheaperinference": MODEL, "muse": "muse-spark-1.3-contributor"}
+UPSTREAMS = {"anthropic": "api.anthropic.com", "cheaperinference": "api.cheaperinference.com", "muse": "api.meta.ai"}
 TASK = ("Read start.txt with the Read tool. Its last line names the next file to read. "
         "Keep reading file after file until a file ends with END, then answer with the single word ok.")
 SECRET_HEADERS = {"authorization", "x-api-key", "cookie", "set-cookie",
@@ -104,7 +105,12 @@ def record(provider, out_dir, options=()):
     settings_env = dict(OPTIONS[o] for o in options)
     env.update(settings_env)
     settings = {"env": {"ANTHROPIC_BASE_URL": "http://127.0.0.1:%d" % server.server_address[1],
-                        "ANTHROPIC_SMALL_FAST_MODEL": MODEL, "DISABLE_TELEMETRY": "1", "DISABLE_AUTOUPDATER": "1"}}
+                        "ANTHROPIC_SMALL_FAST_MODEL": MODELS[provider], "DISABLE_TELEMETRY": "1", "DISABLE_AUTOUPDATER": "1"}}
+    if provider == "muse":  # every request, side requests included, goes to the Muse model
+        settings["apiKeyHelper"] = "printenv MUSE_API_KEY"
+        for k in ("ANTHROPIC_DEFAULT_OPUS_MODEL", "ANTHROPIC_DEFAULT_SONNET_MODEL", "ANTHROPIC_DEFAULT_HAIKU_MODEL",
+                  "CLAUDE_CODE_SUBAGENT_MODEL"):
+            settings["env"][k] = MODELS[provider]
     if provider == "cheaperinference":
         settings["apiKeyHelper"] = "printenv CI_API_KEY"
     with tempfile.TemporaryDirectory() as work:
@@ -114,7 +120,7 @@ def record(provider, out_dir, options=()):
             last = "END" if following == "END" else "Next file: %s.txt" % following
             pathlib.Path(work, name + ".txt").write_text("\n".join(lines + [last]))
         pathlib.Path(work, "settings.json").write_text(json.dumps(settings))
-        claude = subprocess.run(["claude", "-p", TASK, "--model", MODEL, "--allowedTools", "Read",
+        claude = subprocess.run(["claude", "-p", TASK, "--model", MODELS[provider], "--allowedTools", "Read",
                                  "--strict-mcp-config", "--settings", "settings.json"],
                                 cwd=work, env=env, capture_output=True, text=True, timeout=900)
     server.shutdown()
@@ -130,7 +136,7 @@ def record(provider, out_dir, options=()):
             indent=1, ensure_ascii=False))
     version = subprocess.run(["claude", "--version"], capture_output=True, text=True).stdout.strip()
     (out_dir / "run.json").write_text(json.dumps(
-        {"provider": provider, "model": MODEL, "claude_code": version, "settings": settings_env, "claude_exit": claude.returncode,
+        {"provider": provider, "model": MODELS[provider], "claude_code": version, "settings": settings_env, "claude_exit": claude.returncode,
          "claude_error": (claude.stderr or "")[-500:] if claude.returncode else ""}, indent=1))
 
 
@@ -163,10 +169,14 @@ def report(out_dir):
         body = json.loads(f.read_text())["body"]
         response = json.loads((out_dir / "requests" / (n + ".response.json")).read_text())
         h = {k.lower(): v for k, v in response["response_headers"].items()}
-        request_id = h.get("x-ci-request-id") or h.get("request-id") or "none"
+        request_id = h.get("x-ci-request-id") or h.get("request-id") or h.get("x-request-id") or "none"
         endpoint = response["url"].split("/v1/")[-1].split("?")[0]
         if not body.get("tools") or endpoint != "messages":
             side.append("  %s  %s, status %s, request id %s" % (n, endpoint, response["status"], request_id))
+            continue
+        if response["status"] != 200:
+            lines += ["  %s  refused, HTTP %s: %s" % (n, response["status"], response["response_raw"][:160]),
+                      "      request id %s   at %s" % (request_id, h.get("date", "?"))]
             continue
         u, message_id = usage_and_id(response["response_raw"])
         read = u.get("cache_read_input_tokens") or 0

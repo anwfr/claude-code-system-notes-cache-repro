@@ -59,32 +59,32 @@ What each kind of run is:
 <!-- results -->
 | run folder | where | what runs | what differs | setting | read back from the previous request, request 2 onwards |
 |---|---|---|---|---|---|
-| [`claude-code_anthropic_1`](runs/claude-code_anthropic_1/) | Anthropic API | Claude Code | default settings; — | 100 %, 100 %, 100 %, 100 %, 100 %, 100 % |
-| [`claude-code_anthropic_2`](runs/claude-code_anthropic_2/) | Anthropic API | Claude Code | default settings; — | 100 %, 100 %, 100 %, 100 %, 100 %, 100 % |
-| [`claude-code_anthropic_3`](runs/claude-code_anthropic_3/) | Anthropic API | Claude Code | default settings; — | 100 %, 100 %, 100 %, 100 %, 100 % |
-| [`claude-code-nobetas_anthropic_1`](runs/claude-code-nobetas_anthropic_1/) | Anthropic API | Claude Code | cache marker moved to the last user message; `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1` | 84 %, 100 % |
-| [`claude-code-nobetas_anthropic_2`](runs/claude-code-nobetas_anthropic_2/) | Anthropic API | Claude Code | cache marker moved to the last user message; `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1` | 84 %, 100 %, 100 %, 100 %, 100 % |
-| [`claude-code-nobetas_anthropic_3`](runs/claude-code-nobetas_anthropic_3/) | Anthropic API | Claude Code | cache marker moved to the last user message; `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1` | 84 %, 100 %, 100 % |
-| [`claude-code_cheaperinference_1`](runs/claude-code_cheaperinference_1/) | Cheaper Inference | Claude Code | default settings; — | 0 %, 73 %, 57 % |
-| [`claude-code_cheaperinference_2`](runs/claude-code_cheaperinference_2/) | Cheaper Inference | Claude Code | default settings; — | 67 %, 73 %, 57 % |
-| [`claude-code_cheaperinference_3`](runs/claude-code_cheaperinference_3/) | Cheaper Inference | Claude Code | default settings; — | 67 %, 73 %, 72 %, 72 %, 71 % |
-| [`claude-code-nobetas_cheaperinference_1`](runs/claude-code-nobetas_cheaperinference_1/) | Cheaper Inference | Claude Code | cache marker moved to the last user message; `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1` | 88 %, 66 %, 51 %, 42 %, 41 %, 41 % |
-| [`claude-code-nobetas_cheaperinference_2`](runs/claude-code-nobetas_cheaperinference_2/) | Cheaper Inference | Claude Code | cache marker moved to the last user message; `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1` | 88 %, 66 %, 65 %, 51 %, 50 %, 41 % |
-| [`claude-code-nobetas_cheaperinference_3`](runs/claude-code-nobetas_cheaperinference_3/) | Cheaper Inference | Claude Code | cache marker moved to the last user message; `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1` | 88 %, 88 %, 66 %, 65 %, 65 %, 64 % |
-| [`claude-code-reminderoff_cheaperinference_1`](runs/claude-code-reminderoff_cheaperinference_1/) | Cheaper Inference | Claude Code | no note added at each request; `CLAUDE_CODE_TOTAL_TOKENS_REMINDER=off` | 0 %, 100 %, 100 %, 100 %, 100 % |
-| [`claude-code-reminderoff_cheaperinference_2`](runs/claude-code-reminderoff_cheaperinference_2/) | Cheaper Inference | Claude Code | no note added at each request; `CLAUDE_CODE_TOTAL_TOKENS_REMINDER=off` | 67 %, 100 %, 100 %, 100 % |
-| [`claude-code-reminderoff_cheaperinference_3`](runs/claude-code-reminderoff_cheaperinference_3/) | Cheaper Inference | Claude Code | no note added at each request; `CLAUDE_CODE_TOTAL_TOKENS_REMINDER=off` | 67 %, 100 %, 100 %, 100 %, 100 % |
-| [`script_cheaperinference_1`](runs/script_cheaperinference_1/) | Cheaper Inference | Test script | no notes, cache marker on the last user message; — | 100 %, 100 %, 100 % |
-| [`script_cheaperinference_2`](runs/script_cheaperinference_2/) | Cheaper Inference | Test script | no notes, cache marker on the last user message; — | 100 %, 100 %, 100 % |
-| [`script_cheaperinference_3`](runs/script_cheaperinference_3/) | Cheaper Inference | Test script | no notes, cache marker on the last user message; — | 100 %, 100 %, 100 % |
-| [`script_cheaperinference_1`](runs/script_cheaperinference_1/) | Cheaper Inference | Test script | notes, cache marker on the last note; — | 0 %, 33 %, 0 % |
-| [`script_cheaperinference_2`](runs/script_cheaperinference_2/) | Cheaper Inference | Test script | notes, cache marker on the last note; — | 50 %, 33 %, 0 % |
-| [`script_cheaperinference_3`](runs/script_cheaperinference_3/) | Cheaper Inference | Test script | notes, cache marker on the last note; — | 0 %, 0 %, 0 % |
-| [`script_cheaperinference_1`](runs/script_cheaperinference_1/) | Cheaper Inference | Test script | notes, cache marker on the last user message; — | 50 %, 0 %, 0 % |
-| [`script_cheaperinference_2`](runs/script_cheaperinference_2/) | Cheaper Inference | Test script | notes, cache marker on the last user message; — | 50 %, 33 %, 0 % |
-| [`script_cheaperinference_3`](runs/script_cheaperinference_3/) | Cheaper Inference | Test script | notes, cache marker on the last user message; — | 0 %, 0 %, 0 % |
-| [`script-sessionheader_cheaperinference_1`](runs/script-sessionheader_cheaperinference_1/) | Cheaper Inference | Test script | notes, cache marker on the last note; `x-ci-prompt-cache-session` header | 50 %, 33 %, 25 % |
-| [`script-sessionheader_cheaperinference_1`](runs/script-sessionheader_cheaperinference_1/) | Cheaper Inference | Test script | notes, cache marker on the last user message; `x-ci-prompt-cache-session` header | 50 %, 33 %, 25 % |
+| [`claude-code_anthropic_1`](runs/claude-code_anthropic_1/) | Anthropic API | Claude Code | default settings | — | 100 %, 100 %, 100 %, 100 %, 100 %, 100 % |
+| [`claude-code_anthropic_2`](runs/claude-code_anthropic_2/) | Anthropic API | Claude Code | default settings | — | 100 %, 100 %, 100 %, 100 %, 100 %, 100 % |
+| [`claude-code_anthropic_3`](runs/claude-code_anthropic_3/) | Anthropic API | Claude Code | default settings | — | 100 %, 100 %, 100 %, 100 %, 100 % |
+| [`claude-code-nobetas_anthropic_1`](runs/claude-code-nobetas_anthropic_1/) | Anthropic API | Claude Code | cache marker moved to the last user message | `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1` | 84 %, 100 % |
+| [`claude-code-nobetas_anthropic_2`](runs/claude-code-nobetas_anthropic_2/) | Anthropic API | Claude Code | cache marker moved to the last user message | `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1` | 84 %, 100 %, 100 %, 100 %, 100 % |
+| [`claude-code-nobetas_anthropic_3`](runs/claude-code-nobetas_anthropic_3/) | Anthropic API | Claude Code | cache marker moved to the last user message | `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1` | 84 %, 100 %, 100 % |
+| [`claude-code_cheaperinference_1`](runs/claude-code_cheaperinference_1/) | Cheaper Inference | Claude Code | default settings | — | 0 %, 73 %, 57 % |
+| [`claude-code_cheaperinference_2`](runs/claude-code_cheaperinference_2/) | Cheaper Inference | Claude Code | default settings | — | 67 %, 73 %, 57 % |
+| [`claude-code_cheaperinference_3`](runs/claude-code_cheaperinference_3/) | Cheaper Inference | Claude Code | default settings | — | 67 %, 73 %, 72 %, 72 %, 71 % |
+| [`claude-code-nobetas_cheaperinference_1`](runs/claude-code-nobetas_cheaperinference_1/) | Cheaper Inference | Claude Code | cache marker moved to the last user message | `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1` | 88 %, 66 %, 51 %, 42 %, 41 %, 41 % |
+| [`claude-code-nobetas_cheaperinference_2`](runs/claude-code-nobetas_cheaperinference_2/) | Cheaper Inference | Claude Code | cache marker moved to the last user message | `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1` | 88 %, 66 %, 65 %, 51 %, 50 %, 41 % |
+| [`claude-code-nobetas_cheaperinference_3`](runs/claude-code-nobetas_cheaperinference_3/) | Cheaper Inference | Claude Code | cache marker moved to the last user message | `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1` | 88 %, 88 %, 66 %, 65 %, 65 %, 64 % |
+| [`claude-code-reminderoff_cheaperinference_1`](runs/claude-code-reminderoff_cheaperinference_1/) | Cheaper Inference | Claude Code | no note added at each request | `CLAUDE_CODE_TOTAL_TOKENS_REMINDER=off` | 0 %, 100 %, 100 %, 100 %, 100 % |
+| [`claude-code-reminderoff_cheaperinference_2`](runs/claude-code-reminderoff_cheaperinference_2/) | Cheaper Inference | Claude Code | no note added at each request | `CLAUDE_CODE_TOTAL_TOKENS_REMINDER=off` | 67 %, 100 %, 100 %, 100 % |
+| [`claude-code-reminderoff_cheaperinference_3`](runs/claude-code-reminderoff_cheaperinference_3/) | Cheaper Inference | Claude Code | no note added at each request | `CLAUDE_CODE_TOTAL_TOKENS_REMINDER=off` | 67 %, 100 %, 100 %, 100 %, 100 % |
+| [`script_cheaperinference_1`](runs/script_cheaperinference_1/) | Cheaper Inference | Test script | no notes, cache marker on the last user message | — | 100 %, 100 %, 100 % |
+| [`script_cheaperinference_2`](runs/script_cheaperinference_2/) | Cheaper Inference | Test script | no notes, cache marker on the last user message | — | 100 %, 100 %, 100 % |
+| [`script_cheaperinference_3`](runs/script_cheaperinference_3/) | Cheaper Inference | Test script | no notes, cache marker on the last user message | — | 100 %, 100 %, 100 % |
+| [`script_cheaperinference_1`](runs/script_cheaperinference_1/) | Cheaper Inference | Test script | notes, cache marker on the last note | — | 0 %, 33 %, 0 % |
+| [`script_cheaperinference_2`](runs/script_cheaperinference_2/) | Cheaper Inference | Test script | notes, cache marker on the last note | — | 50 %, 33 %, 0 % |
+| [`script_cheaperinference_3`](runs/script_cheaperinference_3/) | Cheaper Inference | Test script | notes, cache marker on the last note | — | 0 %, 0 %, 0 % |
+| [`script_cheaperinference_1`](runs/script_cheaperinference_1/) | Cheaper Inference | Test script | notes, cache marker on the last user message | — | 50 %, 0 %, 0 % |
+| [`script_cheaperinference_2`](runs/script_cheaperinference_2/) | Cheaper Inference | Test script | notes, cache marker on the last user message | — | 50 %, 33 %, 0 % |
+| [`script_cheaperinference_3`](runs/script_cheaperinference_3/) | Cheaper Inference | Test script | notes, cache marker on the last user message | — | 0 %, 0 %, 0 % |
+| [`script-sessionheader_cheaperinference_1`](runs/script-sessionheader_cheaperinference_1/) | Cheaper Inference | Test script | notes, cache marker on the last note | `x-ci-prompt-cache-session` header | 50 %, 33 %, 25 % |
+| [`script-sessionheader_cheaperinference_1`](runs/script-sessionheader_cheaperinference_1/) | Cheaper Inference | Test script | notes, cache marker on the last user message | `x-ci-prompt-cache-session` header | 50 %, 33 %, 25 % |
 <!-- /results -->
 
 Things to know when reading the table:
