@@ -1,0 +1,15 @@
+Our usage record for the requests of this run, from GET /v1/usage/requests (times in UTC).
+attempts = provider_attempt_count; state = cache_reporting_state.
+
+09:26:34  262b833c-0c18-4d0b-8e2f-76a124730211 claude-sonnet-5        billed=0.044925 read=      0 write=  27625 input=      2 out=     5 state=zero    attempts=1
+09:26:46  02e2fc6e-42fa-4d42-8699-2d17ffaecb68 claude-sonnet-5        billed=0.026062 read=  27625 write=  13811 input=      2 out=     4 state=hit     attempts=1
+09:26:50  103e9dd0-46bd-49d4-93c6-33f1b3676db8 claude-sonnet-5        billed=0.027858 read=  41436 write=  13811 input=      2 out=     4 state=hit     attempts=1
+09:27:00  4cb7250d-c571-49f0-b84c-e81b1ac3d9b0 claude-sonnet-5        billed=0.029653 read=  55247 write=  13811 input=      2 out=     4 state=hit     attempts=1
+09:27:05  a8c51e4e-15d4-41f3-bd39-9867b29aa9e9 claude-sonnet-5        billed=0.040451 read=      0 write=  13830 input=  13809 out=     4 state=zero    attempts=1
+09:27:10  f9508012-fe15-4cb2-ba1c-140266f84de6 claude-sonnet-5        billed=0.037749 read=  13830 write=     12 input=  27620 out=     4 state=hit     attempts=1
+09:27:14  fd63bcdd-a8c1-4cf9-9a29-7e2d116566f6 claude-sonnet-5        billed=0.055705 read=  13842 write=     12 input=  41431 out=     4 state=hit     attempts=1
+09:27:20  d2889da9-1bac-4655-be2d-7a73e675bfc8 claude-sonnet-5        billed=0.107838 read=      0 write=  55299 input=  13809 out=     4 state=zero    attempts=1
+09:27:26  4c4c5e33-2261-40e5-b4bd-00160b0e70b9 claude-sonnet-5        billed=0.044937 read=      0 write=  27636 input=      2 out=     4 state=zero    attempts=1
+09:27:31  bf045a64-3085-476c-b80c-504f7b2253e1 claude-sonnet-5        billed=0.046743 read=  13817 write=  27642 input=      2 out=     4 state=hit     attempts=1
+09:27:36  0d0a287d-648b-4a1d-98b1-fcb40b12e9b3 claude-sonnet-5        billed=0.069205 read=  13817 write=  41465 input=      2 out=     4 state=hit     attempts=1
+09:27:42  585691e9-5244-4cf3-950f-0ccbacfcb7c8 claude-sonnet-5        billed=0.112324 read=      0 write=  69105 input=      2 out=     4 state=zero    attempts=1

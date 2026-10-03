@@ -1,0 +1,178 @@
+{
+ "redacted": [
+  "Claude Code's own text (digest kept)",
+  "email address",
+  "metadata",
+  "personal instruction files"
+ ],
+ "body": {
+  "model": "claude-sonnet-5",
+  "messages": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "text",
+      "text": "<Claude Code text: 523 chars, sha256 ae14dff0923c>"
+     },
+     {
+      "type": "text",
+      "text": "<Claude Code text: 558 chars, sha256 39028d231415>"
+     },
+     {
+      "type": "text",
+      "text": "<Claude Code text: 576 chars, sha256 fb4d0d00e27d>"
+     },
+     {
+      "type": "text",
+      "text": "Read start.txt with the Read tool. Its last line names the next file to read. Keep reading file after file until a file ends with END, then answer with the single word ok."
+     }
+    ]
+   },
+   {
+    "role": "system",
+    "content": [
+     {
+      "type": "text",
+      "text": "<Claude Code text: 20912 chars, sha256 c0b9b4a7f95e>",
+      "cache_control": {
+       "type": "ephemeral",
+       "ttl": "1h"
+      }
+     }
+    ]
+   }
+  ],
+  "system": [
+   {
+    "type": "text",
+    "text": "<Claude Code text: 80 chars, sha256 46c14e2071ca>"
+   },
+   {
+    "type": "text",
+    "text": "<Claude Code text: 62 chars, sha256 0d7062851dd7>",
+    "cache_control": {
+     "type": "ephemeral",
+     "ttl": "1h"
+    }
+   },
+   {
+    "type": "text",
+    "text": "<Claude Code text: 27149 chars, sha256 32c93647fecd>",
+    "cache_control": {
+     "type": "ephemeral",
+     "ttl": "1h"
+    }
+   }
+  ],
+  "tools": [
+   {
+    "name": "Agent",
+    "definition": "<Claude Code text: 8720 chars, sha256 f561b6a3c52b>"
+   },
+   {
+    "name": "Bash",
+    "definition": "<Claude Code text: 12083 chars, sha256 29d2f1638a0b>"
+   },
+   {
+    "name": "CronCreate",
+    "definition": "<Claude Code text: 4123 chars, sha256 29ef73e94a6a>"
+   },
+   {
+    "name": "CronDelete",
+    "definition": "<Claude Code text: 445 chars, sha256 beeecc9a2c90>"
+   },
+   {
+    "name": "CronList",
+    "definition": "<Claude Code text: 289 chars, sha256 9ac9faa420f5>"
+   },
+   {
+    "name": "DesignSync",
+    "definition": "<Claude Code text: 9342 chars, sha256 cc13657a5a74>"
+   },
+   {
+    "name": "Edit",
+    "definition": "<Claude Code text: 1739 chars, sha256 6bdcd43fc498>"
+   },
+   {
+    "name": "EnterWorktree",
+    "definition": "<Claude Code text: 4069 chars, sha256 75101e988584>"
+   },
+   {
+    "name": "ExitWorktree",
+    "definition": "<Claude Code text: 2546 chars, sha256 ea0c77fa8f9c>"
+   },
+   {
+    "name": "ListAgents",
+    "definition": "<Claude Code text: 1196 chars, sha256 34bdd9973310>"
+   },
+   {
+    "name": "NotebookEdit",
+    "definition": "<Claude Code text: 1679 chars, sha256 96e18701890d>"
+   },
+   {
+    "name": "Read",
+    "definition": "<Claude Code text: 2632 chars, sha256 63ecb2e0178a>"
+   },
+   {
+    "name": "RemoteTrigger",
+    "definition": "<Claude Code text: 3799 chars, sha256 d05586a46a51>"
+   },
+   {
+    "name": "ReportFindings",
+    "definition": "<Claude Code text: 2283 chars, sha256 aaa936477d18>"
+   },
+   {
+    "name": "ScheduleWakeup",
+    "definition": "<Claude Code text: 4747 chars, sha256 6ad43b6ea60e>"
+   },
+   {
+    "name": "SendMessage",
+    "definition": "<Claude Code text: 5800 chars, sha256 7ce6d7a528f7>"
+   },
+   {
+    "name": "Skill",
+    "definition": "<Claude Code text: 1846 chars, sha256 8889508ddc43>"
+   },
+   {
+    "name": "TaskStop",
+    "definition": "<Claude Code text: 826 chars, sha256 36b0251d8985>"
+   },
+   {
+    "name": "WebFetch",
+    "definition": "<Claude Code text: 2021 chars, sha256 319df658b00d>"
+   },
+   {
+    "name": "WebSearch",
+    "definition": "<Claude Code text: 1933 chars, sha256 f898e7984420>"
+   },
+   {
+    "name": "Workflow",
+    "definition": "<Claude Code text: 5473 chars, sha256 210d50e306e1>"
+   },
+   {
+    "name": "Write",
+    "definition": "<Claude Code text: 1051 chars, sha256 30262f39b3e2>"
+   }
+  ],
+  "metadata": "<redacted: device and session ids>",
+  "max_tokens": 64000,
+  "thinking": {
+   "type": "adaptive",
+   "display": "omitted"
+  },
+  "context_management": {
+   "edits": [
+    {
+     "type": "clear_thinking_20251015",
+     "keep": "all"
+    }
+   ]
+  },
+  "safeguards": "<Claude Code text: 4403 chars, sha256 63059a36f999>",
+  "output_config": {
+   "effort": "high"
+  },
+  "stream": true
+ }
+}

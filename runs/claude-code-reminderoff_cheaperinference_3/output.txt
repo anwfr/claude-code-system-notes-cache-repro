@@ -1,0 +1,21 @@
+Claude Code 2.1.288 (Claude Code) on cheaperinference, model claude-sonnet-5, with CLAUDE_CODE_TOTAL_TOKENS_REMINDER=off
+
+Conversation requests (they carry the tools). Expected from the second one on: 100% reused.
+
+  03   39869 tokens sent,  26721 read from cache
+      request id 43519624-a397-447b-9ed5-fb3ae8b8780a   message id gen_01M40QRQ8XDF3005VJWAQ4DZ40   at Sat, 03 Oct 2026 11:18:11 GMT
+  04   53172 tokens sent,  26721 read from cache  =  67% of the previous request reused
+      request id 21c56b29-c145-446c-88c3-4731f63ce356   message id msg_bdrk_mxbiygpoy27r2ydhwqerh6glg633z6s6cla6b57ov7tjd5cer5ka   at Sat, 03 Oct 2026 11:18:18 GMT
+  06   69436 tokens sent,  53170 read from cache  = 100% of the previous request reused
+      request id 67716ecd-238d-4eb1-a62f-02e4b24848df   message id msg_bdrk_ciwneijiu4akep4zzlfnxvo2asaqg3qykktcxaw5pogsc6cxclbq   at Sat, 03 Oct 2026 11:18:27 GMT
+  07   69891 tokens sent,  69434 read from cache  = 100% of the previous request reused
+      request id 0ac33ff7-ab39-4165-8588-dff875bca6a7   message id msg_bdrk_4coiv3smji2yp7m5t7lu2u65zcz2wdylpfylvdi7pp2rbi4qan3a   at Sat, 03 Oct 2026 11:18:36 GMT
+  08   70521 tokens sent,  69889 read from cache  = 100% of the previous request reused
+      request id 21230ae3-b3f8-4888-ae33-6c4d4bafdba8   message id msg_bdrk_nswtkzezivmfhhlonjnflzf2i4hyvswln37inx6qbdpqm65csdyq   at Sat, 03 Oct 2026 11:18:44 GMT
+  09   70882 tokens sent,  70519 read from cache  = 100% of the previous request reused
+      request id 547b31e4-60bb-4c50-a76f-12289f20ef06   message id msg_bdrk_bccmqchxxzdisr4wqar3wxny465ruam6c5m6wqjyjd7dipcholda   at Sat, 03 Oct 2026 11:18:51 GMT
+
+Side requests (not part of the conversation):
+  01  messages, status 200, request id fc71aa84-922b-4135-9e03-e6b78f88ff99
+  02  messages/count_tokens, status 200, request id none
+  05  messages/count_tokens, status 200, request id none

@@ -1,0 +1,25 @@
+Claude Code 2.1.288 (Claude Code) on anthropic, model claude-sonnet-5
+
+Conversation requests (they carry the tools). Expected from the second one on: 100% reused.
+
+  02   44802 tokens sent,  27925 read from cache
+      request id req_011Cfeyc5SuQLjo7GsXALwUg   message id msg_011Cfeyc5hnHKavk9Bx194ww   at Sat, 03 Oct 2026 08:19:43 GMT
+  03   45101 tokens sent,  44800 read from cache  = 100% of the previous request reused
+      request id req_011CfeycQRuqrWLaVguUrgTy   message id msg_011CfeycR4c8er61jKLdJE6C   at Sat, 03 Oct 2026 08:19:47 GMT
+  05   58276 tokens sent,  45099 read from cache  = 100% of the previous request reused
+      request id req_011CfeycaMDDxY87z9z6SmtF   message id msg_011Cfeycab799w3LrNno6joa   at Sat, 03 Oct 2026 08:19:50 GMT
+  07   74711 tokens sent,  58274 read from cache  = 100% of the previous request reused
+      request id req_011Cfeyd5WepTHygAiCSBpiH   message id msg_011Cfeyd5qVkyGSe4tZuGwUg   at Sat, 03 Oct 2026 08:19:57 GMT
+  08   74980 tokens sent,  74709 read from cache  = 100% of the previous request reused
+      request id req_011CfeydZb6waN9pt9TLrTvL   message id msg_011CfeydZsiJTD8dDWTmkEKr   at Sat, 03 Oct 2026 08:20:03 GMT
+  10   75358 tokens sent,  74978 read from cache  = 100% of the previous request reused
+      request id req_011CfeydvXvzQYKTp4snu9oy   message id msg_011CfeydvqXqnBv3ZdJKukzD   at Sat, 03 Oct 2026 08:20:08 GMT
+  12  105804 tokens sent,  75356 read from cache  = 100% of the previous request reused
+      request id req_011CfeyeJG9UzCpV3RwkugT7   message id msg_011CfeyeJqrviXNbVavn6c9n   at Sat, 03 Oct 2026 08:20:13 GMT
+
+Side requests (not part of the conversation):
+  01  messages, status 200, request id req_011Cfeyc5EVwcd9DG3d9yYZK
+  04  messages/count_tokens, status 200, request id req_011CfeycZFzKoKvg4kJDUwS5
+  06  messages/count_tokens, status 200, request id req_011Cfeyd4TeWtyHx8czvCBRw
+  09  messages/count_tokens, status 200, request id req_011CfeyeETCGrbY9gAoBnodX
+  11  messages/count_tokens, status 200, request id req_011CfeyeGppWWL3arhRop6FW

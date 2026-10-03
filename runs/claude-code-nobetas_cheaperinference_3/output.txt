@@ -1,0 +1,22 @@
+Claude Code 2.1.288 (Claude Code) on cheaperinference, model claude-sonnet-5, with CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1
+
+Conversation requests (they carry the tools). Expected from the second one on: 100% reused.
+
+  01   39932 tokens sent,  26721 read from cache
+      request id 3fb2981f-75ff-470d-a85f-62861d5c5753   message id msg_bdrk_v5sqtrtv34nvs27guowm3u5je264yxe3xrm42aekn5b54ngjpcya   at Sat, 03 Oct 2026 09:21:38 GMT
+  03   40198 tokens sent,  35179 read from cache  =  88% of the previous request reused
+      request id 509b57d3-b26c-4540-bf4f-24b3076f9955   message id msg_bdrk_modpcg65rpawemfsapau3xadlmufm22rv2xnfwy7mmrfojnu74wa   at Sat, 03 Oct 2026 09:21:45 GMT
+  05   53368 tokens sent,  35179 read from cache  =  88% of the previous request reused
+      request id 6c106989-a646-49ef-bb14-21b3ba19191d   message id msg_bdrk_n2tqj6a6dfabtn2wkmxgfddwjr7msjs5ka37rvbcnlcfplwbyvda   at Sat, 03 Oct 2026 09:21:51 GMT
+  06   53718 tokens sent,  35179 read from cache  =  66% of the previous request reused
+      request id d50c5653-5f02-43a4-8bcf-02c5da3ef821   message id msg_bdrk_upsvs5bvjf4irjsuetcd2kofku5x24awa5ohse55hfjh5xnmxsra   at Sat, 03 Oct 2026 09:21:59 GMT
+  07   54274 tokens sent,  35179 read from cache  =  65% of the previous request reused
+      request id 5b70406f-7575-4e31-9f28-3febe2b44d1b   message id msg_bdrk_ziuxyqec53dzd5oexc4sxti64isvvhg5mormxfqn3jkuup2eylkq   at Sat, 03 Oct 2026 09:22:05 GMT
+  08   54777 tokens sent,  35179 read from cache  =  65% of the previous request reused
+      request id d972d959-158d-4f6f-aa58-7ca60f147d3a   message id msg_bdrk_fppggntd6v6earfrmqtv5a6blrhydzeoguicy5a4oxc6pxchtoya   at Sat, 03 Oct 2026 09:22:11 GMT
+  09   55303 tokens sent,  35179 read from cache  =  64% of the previous request reused
+      request id 19f977e2-e7e5-45d5-b94e-a09631287fc5   message id msg_bdrk_3nnyzihlwm6v5zzjb7nz2camejqtcxyeovtmau5ggwfonm26kf3a   at Sat, 03 Oct 2026 09:22:18 GMT
+
+Side requests (not part of the conversation):
+  02  messages/count_tokens, status 200, request id none
+  04  messages, status 200, request id 7ce3e9a7-ef19-4c14-8001-d1353229976f

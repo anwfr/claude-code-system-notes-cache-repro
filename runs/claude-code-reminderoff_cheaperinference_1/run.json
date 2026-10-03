@@ -1,0 +1,10 @@
+{
+ "provider": "cheaperinference",
+ "model": "claude-sonnet-5",
+ "claude_code": "2.1.288 (Claude Code)",
+ "settings": {
+  "CLAUDE_CODE_TOTAL_TOKENS_REMINDER": "off"
+ },
+ "claude_exit": 0,
+ "claude_error": ""
+}

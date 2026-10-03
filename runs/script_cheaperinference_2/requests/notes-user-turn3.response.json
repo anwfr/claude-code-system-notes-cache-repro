@@ -1,0 +1,67 @@
+{
+ "url": "https://api.cheaperinference.com/v1/messages",
+ "request_headers": {
+  "anthropic-version": "2023-06-01",
+  "anthropic-beta": "mid-conversation-system-2026-04-07",
+  "content-type": "application/json",
+  "x-api-key": "<redacted>"
+ },
+ "request_body_file": "notes-user-turn3.request.json",
+ "status": 200,
+ "response_headers": {
+  "Cache-Control": "no-store",
+  "Content-Type": "application/json; charset=utf-8",
+  "Date": "Sat, 03 Oct 2026 09:27:41 GMT",
+  "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+  "Server": "Vercel",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+  "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+  "X-Ci-Cache": "miss",
+  "X-Ci-Model-Response-Ms": "3790",
+  "X-Ci-Prompt-Cache-Affinity": "new",
+  "X-Ci-Request-Id": "0d0a287d-648b-4a1d-98b1-fcb40b12e9b3",
+  "X-Ci-Routing-Overhead-Ms": "2038",
+  "X-Ci-Techniques": "",
+  "X-Ci-Tokens-Saved": "0",
+  "X-Ci-Zdr": "false",
+  "X-Content-Type-Options": "nosniff",
+  "X-Frame-Options": "DENY",
+  "X-Matched-Path": "/api/v1/messages",
+  "X-Nextjs-Rewritten-Path": "/api/v1/messages",
+  "X-Vercel-Cache": "MISS",
+  "X-Vercel-Id": "cdg1::fra1::tz97v-1791019655612-e1fd67d00c19",
+  "Connection": "close",
+  "Transfer-Encoding": "chunked"
+ },
+ "response_body": {
+  "id": "msg_011Cff4nbEuE9i6ny4Yt7QxB",
+  "type": "message",
+  "role": "assistant",
+  "model": "claude-sonnet-5",
+  "content": [
+   {
+    "type": "text",
+    "text": "ok"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+   "input_tokens": 2,
+   "output_tokens": 4,
+   "cache_read_input_tokens": 13817,
+   "cache_creation_input_tokens": 41465
+  },
+  "cheaper_inference": {
+   "request_id": "0d0a287d-648b-4a1d-98b1-fcb40b12e9b3",
+   "billing": {
+    "status": "settled",
+    "billed_cost_usd": "0.069205",
+    "currency": "USD",
+    "zero_data_retention": false,
+    "effective_discount_percent": 35.00040856617692
+   }
+  }
+ }
+}

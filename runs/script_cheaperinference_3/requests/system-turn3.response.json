@@ -1,0 +1,66 @@
+{
+ "url": "https://api.cheaperinference.com/v1/messages",
+ "request_headers": {
+  "anthropic-version": "2023-06-01",
+  "anthropic-beta": "mid-conversation-system-2026-04-07",
+  "content-type": "application/json",
+  "x-api-key": "<redacted>"
+ },
+ "request_body_file": "system-turn3.request.json",
+ "status": 200,
+ "response_headers": {
+  "Cache-Control": "no-store",
+  "Content-Type": "application/json; charset=utf-8",
+  "Date": "Sat, 03 Oct 2026 09:25:06 GMT",
+  "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+  "Server": "Vercel",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+  "Vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+  "X-Ci-Cache": "miss",
+  "X-Ci-Model-Response-Ms": "2541",
+  "X-Ci-Prompt-Cache-Affinity": "new",
+  "X-Ci-Request-Id": "9015dbba-0b0c-47f3-9e0c-9c22961715ed",
+  "X-Ci-Routing-Overhead-Ms": "1629",
+  "X-Ci-Techniques": "",
+  "X-Ci-Tokens-Saved": "0",
+  "X-Ci-Zdr": "false",
+  "X-Content-Type-Options": "nosniff",
+  "X-Frame-Options": "DENY",
+  "X-Matched-Path": "/api/v1/messages",
+  "X-Nextjs-Rewritten-Path": "/api/v1/messages",
+  "X-Vercel-Cache": "MISS",
+  "X-Vercel-Id": "cdg1::fra1::xqcf9-1791019502156-d1cec1b2a7f6",
+  "Connection": "close",
+  "Transfer-Encoding": "chunked"
+ },
+ "response_body": {
+  "id": "msg_011Cff4bD7pbS8eKmAuzvrKQ",
+  "type": "message",
+  "role": "assistant",
+  "model": "claude-sonnet-5",
+  "content": [
+   {
+    "type": "text",
+    "text": "ok"
+   }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "usage": {
+   "input_tokens": 13809,
+   "output_tokens": 4,
+   "cache_creation_input_tokens": 41475
+  },
+  "cheaper_inference": {
+   "request_id": "9015dbba-0b0c-47f3-9e0c-9c22961715ed",
+   "billing": {
+    "status": "settled",
+    "billed_cost_usd": "0.085374",
+    "currency": "USD",
+    "zero_data_retention": false,
+    "effective_discount_percent": 35.00043777670343
+   }
+  }
+ }
+}

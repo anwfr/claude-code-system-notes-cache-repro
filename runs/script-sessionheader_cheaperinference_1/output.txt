@@ -1,0 +1,26 @@
+mode: session
+Provider: cheaperinference, model claude-sonnet-5
+
+RUN 2 - same conversation, plus a short system note after each user message
+        (like Claude Code): the marker is on the last system note
+  turn 1:  27638 tokens sent,      0 read from cache
+          request id 173ccfec-d364-42dd-8550-8a0dc27c421e   message id msg_011CffEoEoHKYTiUDBGMFwiN
+  turn 2:  41461 tokens sent,  13829 read from cache  =  50% of the previous turn reused
+          request id 39a0517a-9de2-4916-bd63-19cee191596f   message id msg_011CffEoWizLPjx81Bd2tJ61
+  turn 3:  55284 tokens sent,  13841 read from cache  =  33% of the previous turn reused
+          request id d400543c-a252-435c-acea-de6c079de809   message id msg_011CffEosHkNYw17WZ1eKoXv
+  turn 4:  69107 tokens sent,  13853 read from cache  =  25% of the previous turn reused
+          request id ef537b41-4df2-458c-84d1-52d875c573a0   message id msg_011CffEpEfN6VrhFuv5rctPA
+  expected on turns 2 to 4: 100%
+
+RUN 3 - same as RUN 2, but the marker is on the last user message, before the note
+        (like Claude Code with CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1)
+  turn 1:  27639 tokens sent,      0 read from cache
+          request id 40670e0b-a90d-4826-b9e4-b482b693ac2f   message id msg_011CffEpdDwY3FLbqSVNQWdK
+  turn 2:  41462 tokens sent,  13818 read from cache  =  50% of the previous turn reused
+          request id 5a362651-5490-44af-86e5-d303f97bf55e   message id msg_011CffEpxxqbEFZ5b2jEw1cN
+  turn 3:  55285 tokens sent,  13818 read from cache  =  33% of the previous turn reused
+          request id b5c1a0db-0ca6-469f-9748-2aefa1245160   message id msg_011CffEqKydVQWTwAnkYFxmm
+  turn 4:  69108 tokens sent,  13818 read from cache  =  25% of the previous turn reused
+          request id 2290d10a-137d-4722-a44e-b120ff252c18   message id msg_011CffEqctsEviP8P5dhZzm3
+  expected on turns 2 to 4: 100%

@@ -1,0 +1,59 @@
+{
+ "redacted": [
+  "Claude Code's own text (digest kept)",
+  "metadata"
+ ],
+ "body": {
+  "model": "claude-sonnet-5",
+  "messages": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "text",
+      "text": "<Claude Code text: 372 chars, sha256 4ef74b4320f1>"
+     }
+    ]
+   }
+  ],
+  "system": [
+   {
+    "type": "text",
+    "text": "<Claude Code text: 80 chars, sha256 fafeed9f9914>"
+   },
+   {
+    "type": "text",
+    "text": "<Claude Code text: 62 chars, sha256 0d7062851dd7>"
+   },
+   {
+    "type": "text",
+    "text": "<Claude Code text: 3059 chars, sha256 765b5ba2fa0a>"
+   }
+  ],
+  "tools": [],
+  "metadata": "<redacted: device and session ids>",
+  "max_tokens": 64000,
+  "thinking": {
+   "type": "disabled"
+  },
+  "output_config": {
+   "effort": "high",
+   "format": {
+    "type": "json_schema",
+    "schema": {
+     "type": "object",
+     "properties": {
+      "title": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "title"
+     ],
+     "additionalProperties": false
+    }
+   }
+  },
+  "stream": true
+ }
+}

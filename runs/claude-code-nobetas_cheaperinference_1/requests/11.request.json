@@ -1,0 +1,15 @@
+{
+ "redacted": [
+  "Claude Code's own text (digest kept)"
+ ],
+ "body": {
+  "model": "claude-sonnet-5",
+  "messages": [
+   {
+    "role": "user",
+    "content": "<Claude Code text: 31893 chars, sha256 a7a920ee3b01>"
+   }
+  ],
+  "tools": []
+ }
+}

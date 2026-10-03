@@ -1,0 +1,11 @@
+Our usage record for the requests of this run, from GET /v1/usage/requests (times in UTC).
+attempts = provider_attempt_count; state = cache_reporting_state.
+
+11:16:19  b6469bed-c416-4161-8679-99d8c7377605 claude-sonnet-5        billed=0.001214 read=      0 write=      0 input=    844 out=    18 state=unknown attempts=1
+11:16:19  fe6ae908-90bf-4e43-a5f7-dfa5a686408e claude-sonnet-5        billed=0.025936 read=  26721 write=  12203 input=    945 out=   216 state=hit     attempts=7
+11:16:34  45694afe-5bac-461d-8e7d-768a26c9977e claude-sonnet-5        billed=0.048864 read=  26721 write=  26383 input=      2 out=   387 state=hit     attempts=1
+11:16:43  e310a530-e6b2-42aa-9faf-312aec326681 claude-sonnet-5        billed=0.040195 read=  53104 write=  16406 input=      2 out=  1020 state=hit     attempts=1
+11:16:59  5effbe8c-0312-4d30-b883-9636dc64b562 claude-sonnet-5        billed=0.077743 read=      0 write=  47734 input=     90 out=     9 state=zero    attempts=1
+11:17:04  87ba5f0d-2518-4d99-9273-8c5d7fdf52dd claude-sonnet-5        billed=0.012134 read=  69510 write=   1085 input=      2 out=   205 state=hit     attempts=1
+11:17:10  60182032-2b39-4f2a-bd17-230f251737b9 claude-sonnet-5        billed=0.006559 read=  47734 write=    110 input=     90 out=     9 state=hit     attempts=1
+11:17:14  d2accf2e-1b10-4695-95eb-b99b6181b3f6 claude-sonnet-5        billed=0.009748 read=  70595 write=    334 input=      2 out=     4 state=hit     attempts=1

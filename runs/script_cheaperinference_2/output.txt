@@ -1,0 +1,36 @@
+Provider: cheaperinference, model claude-sonnet-5
+
+RUN 1 - normal conversation, no system notes: the marker is on the last user message
+  turn 1:  27627 tokens sent,      0 read from cache
+          request id 262b833c-0c18-4d0b-8e2f-76a124730211   message id msg_011Cff4hwyhR9MuwiXK6NaEW
+  turn 2:  41438 tokens sent,  27625 read from cache  = 100% of the previous turn reused
+          request id 02e2fc6e-42fa-4d42-8699-2d17ffaecb68   message id msg_011Cff4iqxZkJtMYpDf2wpdT
+  turn 3:  55249 tokens sent,  41436 read from cache  = 100% of the previous turn reused
+          request id 103e9dd0-46bd-49d4-93c6-33f1b3676db8   message id msg_011Cff4jDzdKwkApUUtmh45a
+  turn 4:  69060 tokens sent,  55247 read from cache  = 100% of the previous turn reused
+          request id 4cb7250d-c571-49f0-b84c-e81b1ac3d9b0   message id msg_011Cff4jv1vRmSmajiYpWBuu
+  expected on turns 2 to 4: 100%
+
+RUN 2 - same conversation, plus a short system note after each user message
+        (like Claude Code): the marker is on the last system note
+  turn 1:  27639 tokens sent,      0 read from cache
+          request id a8c51e4e-15d4-41f3-bd39-9867b29aa9e9   message id msg_011Cff4kGUz3ojCbR3NBnW5s
+  turn 2:  41462 tokens sent,  13830 read from cache  =  50% of the previous turn reused
+          request id f9508012-fe15-4cb2-ba1c-140266f84de6   message id msg_011Cff4kdxKZM9mAzUxik1Ej
+  turn 3:  55285 tokens sent,  13842 read from cache  =  33% of the previous turn reused
+          request id fd63bcdd-a8c1-4cf9-9a29-7e2d116566f6   message id msg_011Cff4kxPq6eEoECmU754s1
+  turn 4:  69108 tokens sent,      0 read from cache  =   0% of the previous turn reused
+          request id d2889da9-1bac-4655-be2d-7a73e675bfc8   message id msg_011Cff4mTurHx3tyWGg8XU3R
+  expected on turns 2 to 4: 100%
+
+RUN 3 - same as RUN 2, but the marker is on the last user message, before the note
+        (like Claude Code with CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1)
+  turn 1:  27638 tokens sent,      0 read from cache
+          request id 4c4c5e33-2261-40e5-b4bd-00160b0e70b9   message id msg_011Cff4ms4PUvrsZkgVui2GR
+  turn 2:  41461 tokens sent,  13817 read from cache  =  50% of the previous turn reused
+          request id bf045a64-3085-476c-b80c-504f7b2253e1   message id msg_011Cff4nBGWNLFFBxauYH8Ve
+  turn 3:  55284 tokens sent,  13817 read from cache  =  33% of the previous turn reused
+          request id 0d0a287d-648b-4a1d-98b1-fcb40b12e9b3   message id msg_011Cff4nbEuE9i6ny4Yt7QxB
+  turn 4:  69107 tokens sent,      0 read from cache  =   0% of the previous turn reused
+          request id 585691e9-5244-4cf3-950f-0ccbacfcb7c8   message id msg_011Cff4o1hKMbd8TGyCbuARu
+  expected on turns 2 to 4: 100%

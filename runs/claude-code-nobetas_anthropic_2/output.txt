@@ -1,0 +1,21 @@
+Claude Code 2.1.288 (Claude Code) on anthropic, model claude-sonnet-5, with CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1
+
+Conversation requests (they carry the tools). Expected from the second one on: 100% reused.
+
+  02   44799 tokens sent,  27925 read from cache
+      request id req_011CffD9jYz2w6yqe5BJeoSB   message id msg_011CffD9jua8JEpZnJQ4sxkj   at Sat, 03 Oct 2026 11:17:21 GMT
+  03   45166 tokens sent,  37497 read from cache  =  84% of the previous request reused
+      request id req_011CffDAJ1s71fDxdgXHeBXz   message id msg_011CffDAJk1bAoe2Ltu9cdba   at Sat, 03 Oct 2026 11:17:30 GMT
+  05   58384 tokens sent,  45124 read from cache  = 100% of the previous request reused
+      request id req_011CffDAmMQoDmX94huXDgNU   message id msg_011CffDAmkisnrkWCLnkss54   at Sat, 03 Oct 2026 11:17:35 GMT
+  07   75363 tokens sent,  58342 read from cache  = 100% of the previous request reused
+      request id req_011CffDBpQFDUSXVR1C5zirJ   message id msg_011CffDBqYCSP6w89ApDuKCy   at Sat, 03 Oct 2026 11:17:50 GMT
+  08   75749 tokens sent,  75321 read from cache  = 100% of the previous request reused
+      request id req_011CffDC68no1hThqBaGJBvq   message id msg_011CffDC6e3prKmCsL8noYPB   at Sat, 03 Oct 2026 11:17:53 GMT
+  09   76137 tokens sent,  75707 read from cache  = 100% of the previous request reused
+      request id req_011CffDCMiekprapessKeM96   message id msg_011CffDCN7j3QmnthWS7UyUA   at Sat, 03 Oct 2026 11:17:57 GMT
+
+Side requests (not part of the conversation):
+  01  messages, status 200, request id req_011CffD9jS3Gen7P9pqqjHE9
+  04  messages/count_tokens, status 200, request id req_011CffDAjQ5u2nKxreLab5i5
+  06  messages/count_tokens, status 200, request id req_011CffDBo48SGLNn29rYW52C

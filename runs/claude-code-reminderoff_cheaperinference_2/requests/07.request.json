@@ -1,0 +1,79 @@
+{
+ "redacted": [
+  "Claude Code's own text (digest kept)",
+  "metadata"
+ ],
+ "body": {
+  "model": "claude-sonnet-5",
+  "max_tokens": 64,
+  "system": [
+   {
+    "type": "text",
+    "text": "<Claude Code text: 80 chars, sha256 07c721eda4a7>"
+   },
+   {
+    "type": "text",
+    "text": "<Claude Code text: 139164 chars, sha256 d08e2a222302>",
+    "cache_control": {
+     "type": "ephemeral"
+    }
+   },
+   {
+    "type": "text",
+    "text": "<Claude Code text: 240 chars, sha256 fb93fa0a6a61>"
+   }
+  ],
+  "messages": [
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "text",
+      "text": "<Claude Code text: 2082 chars, sha256 1ca46953fb30>",
+      "cache_control": {
+       "type": "ephemeral"
+      }
+     }
+    ]
+   },
+   {
+    "role": "user",
+    "content": [
+     {
+      "type": "text",
+      "text": "<Claude Code text: 13 chars, sha256 7b1ff485cbaf>"
+     },
+     {
+      "type": "text",
+      "text": "<Claude Code text: 183 chars, sha256 eccb83b588bb>",
+      "cache_control": {
+       "type": "ephemeral"
+      }
+     },
+     {
+      "type": "text",
+      "text": "<Claude Code text: 735 chars, sha256 20902e8e950d>",
+      "cache_control": {
+       "type": "ephemeral"
+      }
+     },
+     {
+      "type": "text",
+      "text": "<Claude Code text: 14 chars, sha256 422afa19be38>"
+     },
+     {
+      "type": "text",
+      "text": "<Claude Code text: 191 chars, sha256 d1854ec2a0e2>"
+     }
+    ]
+   }
+  ],
+  "stop_sequences": [
+   "</severity>"
+  ],
+  "thinking": {
+   "type": "disabled"
+  },
+  "metadata": "<redacted: device and session ids>"
+ }
+}

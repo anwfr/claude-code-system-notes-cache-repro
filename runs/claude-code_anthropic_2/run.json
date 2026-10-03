@@ -1,0 +1,7 @@
+{
+ "provider": "anthropic",
+ "model": "claude-sonnet-5",
+ "claude_code": "2.1.288 (Claude Code)",
+ "claude_exit": 0,
+ "claude_error": ""
+}
